@@ -103,6 +103,24 @@ export default function Rightbar() {
             <b>Pola Foster</b> and 3 other friends have birthday today
           </span>
         </div>
+        <img className="rightbarAd" src='assets/post 3.jpg' alt=""/>
+        <h4 className="rightbarTitle">Online friends</h4>
+        <ul className="rightbarFriendList">
+          <li className="rightbarFriend">
+            <div className="rightbarProfileImgContainer">
+              <img className="rightbarProfileImg" src="./assets/pic 10.jpg" alt =""/>
+              <span className="rightbarOnline"></span>
+            </div>
+            <span className="rightbarUsername">John Carter</span>
+          </li>
+          <li className="rightbarFriend">
+            <div className="rightbarProfileImgContainer">
+              <img className="rightbarProfileImg" src="./assets/pic 9.jpg" alt =""/>
+              <span className="rightbarOnline"></span>
+            </div>
+            <span className="rightbarUsername">Zyan Malik</span>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -3,7 +3,8 @@ import { MoreVert } from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import { useState } from "react";
 
-export default function Post() {
+export default function Post({post}) {
+  console.log(post)
   return (
     <div className="post">
       <div className="postWrapper">
@@ -24,7 +25,7 @@ export default function Post() {
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">Hey it is my first post</span>
+          <span className="postText">{post?.desc}</span>
           <img className="postImg" src="assets/post 1.jpg" alt="" />
         </div>
         <div className="postBottom">
@@ -34,7 +35,7 @@ export default function Post() {
             <img className="likeIcon" src="assets/haha.jpg"  alt="" />
             <img className="likeIcon" src="assets/angry.jpg" alt="" />
             <img className="likeIcon" src="assets/sad.jpg" alt="" />
-            <span className="postLikeCounter">50 people like it</span>
+            <span className="postLikeCounter">{post.like}</span>
           </div>
           <div className="postBottomRight">
             <span className="postCommentText">10 comments</span>
